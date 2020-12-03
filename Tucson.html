@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tucson</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+        <style>
+            body{
+                background-color:honeydew;
+            }
+            .mySlides {display: none}
+
+            .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            }
+
+            .prev, .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 10px 15px;
+                margin-top: -22px;
+                color: white;
+                background-color: grey;
+                border-radius: 0 3px 3px 0;
+            }
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+            .prev:hover, .next:hover {
+                background-color: rgba(0,0,0,0.8);
+            }
+        </style>
+    </head>
+    <body>
+        <br>
+        <button type="submit" class="buybutton"> Performance</button><br>
+        <img src="Tucson/t.png" alt="" width="100%">
+
+        <div>
+            <h2 align="center"><b>The new TUCSON.</b></h2>
+            <h4 align="center">The Drive of the driven. The power that compliments the force within you. 
+                The Style that marks your presence. The new TUCSON is all that, and much more. It's more capable, 
+                more advanced and offers incomparable drive quality.
+            </h4><br>
+
+            <img src="tucson/t1.png" alt="" width="100%"><br><br>
+
+            <div  class="row">
+                <div class="column">
+                    <figure>
+                        <img src="Tucson/t2.png" alt="Snow" width="100%" style="border-radius: 10px;">
+                        <h2><b>Make a bold move</b></h2>
+                        <h4>Its stylish design, sleek lines and bold stance stand out no matter what environment it is in.</h4>
+                    </figure>
+                </div>
+                <div class="column">
+                    <figure>
+                        <img src="Tucson/t3.png" alt="Snow" width="100%" style="border-radius: 10px;">
+                        <h2><b>Canvas of endless potenial</b></h2>
+                        <h4>You are constantly challenging yourself to be better. It's time to discover the undiscovered.</h4>
+                    </figure>
+                </div>
+            </div><br><br>
+        </div>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="Tucson/t4.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <img src="Tucson/t5.png" style="width:100%">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div><br>
+            
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        } 
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slides[slideIndex-1].style.display = "block";  
+        }
+        </script>
+
+    <div>
+        <h2 align="center"><b> 60:40 Split Foldable Rear Seat</b></h2>
+        <h4 align="center">When it comes to an incredibly flexible and practical seating layout, 
+            the new TUCSON beats all with 60:40 <br> Split foldable rear seats feature. 
+            Choose extra convenience with 60:40 seat configurations. TUCSON's <br> 
+            ergonomically designed seats ensure maximum comfort and dynamic space for everyone
+        </h4>
+    </div><br><br>
+
+
+    <div class="back">
+        <h2 class="space"><b>
+            Hyundai Blue Link
+        </b></h2>
+
+        <img src="Tucson/t6.png" alt="" width="100%">
+
+        <h2 align="center"><b> Hyundai Blue Link.</b></h2>
+        <h4 align="center">
+            The new TUCSON comes with Hyundai Blue Link technology to give you a truly state-of-the-art connected car experience. Now communicate with your car from wherever you are.<br><br>
+        </h4>
+
+        <h2 class="space"><b>
+            Wireless Phone Charger
+        </b></h2>
+
+        <img src="Tucson/t7.png" alt="" width="100%">
+
+        <h2 align="center"><b> Wireless Phone Charger.</b></h2>
+
+        <h4 align="center">
+            The new TUCSON is now available with wireless phone charger for your convenience<br><br>
+        </h4>
+
+        <h2 class="space"><b>
+            Infinity Premium Sound System (8 Speakers)
+        </b></h2>
+
+        <img src="Tucson/t8.png" alt="" width="100%">
+
+        <h2 align="center"><b> Infinity Premium Sound System (8 Speakers)</b></h2>
+
+        <h4 align="center">
+            Get ready to experience the best listening experience  with Infinity Premium Sound
+            system.<br><br>
+        </h4>
+    </div>
+
+        <h2 align="center" class="space" class="font"><b>New Ultimate Features</b></h2>
+
+            <div  class="row">
+                <div class="column">
+                    <figure>
+                        <img src="Tucson/t9.png" alt="Snow" style="width:100%">
+                        <h3 align="center"><b>R18 Diamond-cut Alloy Wheels </b></h3>
+                    </figure>
+                </div>
+                <div class="column">
+                    <figure>
+                        <img src="Tucson/t10.png" alt="Forest" style="width:100%">
+                        <h3 align="center"><b>Penta Projector LED Headlamps with LED DRLs</b></h3>
+                    </figure>
+                </div>
+                <div class="column">
+                    <figure>
+                        <img src="Tucson/t11.png" alt="Mountains" style="width:100%">
+                        <h3 align="center"><b>20.32cm HD Audio Video Navigation System</b></h3>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <figure>
+                        <img src="Tucson/t12.png" alt="Snow" style="width:100%">
+                        <h3 align="center"><b>Powerful and Efficient </b></h3>
+                    </figure>
+                </div>
+                <div class="column">
+                    <figure>
+                        <img src="Tucson/t13.png" alt="Forest" style="width:100%">
+                        <h3 align="center"><b>Chrome outside Door Handles with Front Pocket Lighting</b></h3>
+                    </figure>
+                </div>
+                <div class="column">
+                    <figure>
+                        <img src="Tucson/t14.png" alt="Mountains" style="width:100%">
+                        <h3 align="center"><b>Electric Panoramic Sunroof</b></h3><br><br>
+                    </figure>
+                </div>
+            </div>
+
+
+            <h2 align="center" class="space"><b>Know More About Engine</b></h2>
+
+            <div class="row1">
+                <div class="column1">
+                    <img src="Elantra/en1.png" alt="" width="100%" style="border-radius: 50px;">
+                </div>
+                <div class="column1" style="font-size: 125%;">
+                    <ul>
+                        <h2><b><u>1.2 l U2 CRDi Diesel</u></b></h2><br>
+                        <li>Capable of a maximum 75 ps at 4 000 rpm and 19.4 kg∙m torque at 1 750 ~ 2 250 rpm</li>
+                        <li>High fuel efficiency</li>
+                        <li>BS6 compliance with Lean NOx Trap (LNT) and Diesel Particulate Filter (DPF)</li>
+                        <li>Low Maintaineance cost*</li>
+                        <li>Wonder warranty upto 5 years*</li>
+                    </ul>
+                </div>
+            </div><br>
+    
+            <div  class="row1">
+                <div class="column1">
+                    <img src="Elantra/en2.png" alt="" width="100%" style="border-radius: 50px;">
+                </div>
+                <div class="column1" style="font-size: 125%;">
+                    <ul>
+                        <h2><b><u>1.5 l U2 CRDi Diesel 100 ps</u></b></h2><br>
+                        <li>Capable of a maximum power 100 ps at 4 000 rpm with a torque of 24.5 kgm at 1 500- 2 750 rpm</li>
+                        <li>High fuel efficiency</li>
+                        <li>Waste Gate Turbo charger (WGT) offers high performance</li>
+                        <li>BS6 compliance with Lean NOx Trap (LNT) and Diesel Particulate Filter (DPF)</li>
+                        <li>Low maintenance cost*</li>
+                    </ul>
+                </div>
+            </div><br>
+    
+            <div  class="row1">
+                <div class="column1">
+                    <img src="Elantra/en3.png" alt="" width="100%" style="border-radius: 50px;">
+                </div>
+                <div class="column1" style="font-size: 125%;">
+                    <ul>
+                        <h2><b><u>1.5 l U2 CRDi Diesel 115 ps</u></b></h2><br>
+                        <li>Capable of a maximum 185 ps at 4 000 rpm and 40.8 kg∙m torque at 1 750 ~ 2 750 rpm</li>
+                        <li>High fuel efficiency</li>
+                        <li>Variable Geometry Turbo charger (VGT) delivers high performance even at low speeds</li>
+                        <li>BS6 compliance with Lean NOx Trap (LNT) and Diesel Particulate Filter (DPF)</li>
+                        <li>Low maintenance cost*</li>
+                        <li>Wonder warranty upto 5 years*</li>
+                    </ul>
+                </div>
+            </div><br>
+    
+            <div  class="row1">
+                <div class="column1">
+                    <img src="Elantra/en4.png" alt="" width="100%" style="border-radius: 50px;">
+                </div>
+                <div class="column1" style="font-size: 125%;">
+                    <ul>
+                        <h2><b><u>R 2.0 l CRDi Diesel</u></b></h2><br>
+                        <li>Capable of a maximum 185 ps at 4 000 rpm and 40.8 kg∙m torque at 1 750 ~ 2 750 rpm</li>
+                        <li>High power and torque</li>
+                        <li>Electronic Variable Geometry Turbo charger (e-VGT) delivers an exhilarating drive experience</li>
+                        <li>Wonder warranty upto 5 years*</li>
+                    </ul><br>
+                </div>
+            </div><br>
+        <button type="submit" class="buybutton" ><a href="Tucson buy.html"> Buy Car</a></button><br>
+    </body>
+</html>

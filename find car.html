@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Find Car</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .responsive {
+                max-width: 100%;
+                height: auto;
+            }
+            .button {
+                width: 100%;
+                height: 100%;
+                background-color: lightgray;
+                padding: 15px 15px;
+                border-radius: 8px;
+                text-align: center;
+                font-size: 120%;
+                display: inline-block;
+                margin: 4px 2px;
+            }
+            button{
+                margin-left: 3%;
+                border-radius: 8px;
+            }
+            figcaption{
+                font-size:x-large;
+                width: auto;
+                height: auto;
+            }
+            body {
+                background-color:whitesmoke;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="row">
+            <div class="column">
+              <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="leftMenu"><br>
+                <button onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large">CLOSE</button>
+                <a href="index.html" class="w3-bar-item w3-button"><b>Home</b></a>
+                <a href="find car.html" target="_blank" class="w3-bar-item w3-button"><b>Find a Car</b></a>
+                <a href="login.html" target="_blank" class="w3-bar-item w3-button"><b>Login</b></a>
+                <a href="signup.html" target="_blank" class="w3-bar-item w3-button"><b>Sign Up</b></a>
+              </div>
+              <div><br>
+                  <button class="w3-button w3-teal w3-xlarge w3-left" onclick="openLeftMenu()">&#9776;</button>
+              </div>
+            </div>
+            
+            <div class="column"></div>
+            
+            <div class="column">
+              <img src="creta/logo2.png" alt="" class="logo" width="100%">
+            </div>
+        </div>
+
+        <script>
+            function openLeftMenu() {
+              document.getElementById("leftMenu").style.display = "block";
+            }
+            
+            function closeLeftMenu() {
+              document.getElementById("leftMenu").style.display = "none";
+            }
+        </script> 
+
+        <div class="row">
+            <div class="column">
+                <figure>
+                    <img src="creta/b0.png" alt="car" class="responsive">
+                    <figcaption align="center"><b>Creta</b></figcaption>
+                    <button type="submit" class="button"> <a href="creta.html">Show Specifications</a></button>
+                </figure>
+                <figure>
+                    <img src="Elantra/r0.png" alt="car" class="responsive">
+                    <figcaption align="center"><b>Elantra</b></figcaption>
+                    <button type="submit" class="button"> <a href="Elantra.html">Show Specifications</a></button>
+                </figure>
+                
+            </div>
+            <div class="column">
+                <figure>
+                    <img src="Elite i20/r0.png" alt="car" class="responsive">
+                    <figcaption align="center"><b>Elite i20</b></figcaption>
+                    <button type="submit" class="button"> <a href="i20.html">Show Specifications</a></button>
+                </figure>
+                <figure>
+                    <img src="Kona/b0.png" alt="car" class="responsive">
+                    <figcaption align="center"><b>Kona Electric</b></figcaption>
+                    <button type="submit" class="button"> <a href="kona.html">Show Specifications</a></button>
+                </figure>
+            </div>
+            <div class="column">
+                <figure>
+                    <img src="Tucson/b0.png" alt="car" class="responsive">
+                    <figcaption align="center"><b>Tucson</b></figcaption>
+                    <button type="submit" class="button"> <a href="Tucson.html">Show Specifications</a></button>
+                </figure>
+                <figure>
+                    <img src="verna/r0.png" alt="car" class="responsive">
+                    <figcaption align="center"><b>Verna</b></figcaption>
+                    <button type="submit" class="button"> <a href="verna.html">Show Specifications</a></button>
+                </figure>
+            </div>
+        </div>
+    </body>
+</html>

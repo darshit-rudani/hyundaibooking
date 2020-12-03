@@ -1,0 +1,120 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.column {
+    flex: 25%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+@media screen and (max-width: 800px) {
+.column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+}
+}
+@media screen and (max-width: 600px) {
+.column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+}
+}
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.column1 {
+    flex: 25%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+@media screen and (max-width: 800px) {
+.column1{
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+}
+}
+@media screen and (max-width: 600px) {
+.column1{
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+}
+}
+
+.back{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+.table1{
+    font-size: 130%;
+}
+.buybutton1 {
+    display: block;
+    margin-left: auto;
+    width: 35%;
+    border-radius: 8px;
+    color: black;
+    padding: 10px;
+    font-size: 100%;
+    text-align: center;
+}
+.buybutton1:hover{
+	background-color: gray;
+}
+.space:hover{
+  background-color: silver;
+}
+.space{
+	text-align: center;
+    background-color: lightgray;
+}
+.font{
+  font-size: 219%;
+}
+.photo {
+  float: left;
+  width: 31.5%;
+  padding: 10px;
+}
+.buybutton {
+  display: block;
+  margin-left: 20%;
+  width: 60%;
+  border-radius: 8px;
+  background-color: lightgray;
+  color: black;
+  padding: 0.5%;
+  font-size: 175%;
+  cursor: pointer;
+  text-align: center;
+}
+.buybutton:hover{
+  background-color: lightgray;
+  color: blue;
+  box-shadow:  0 0 5px blue,
+               0 0 10px blue;
+}
+.b1
+{
+	cursor: pointer;
+	border-radius: 5px;
+	padding: 5px 10px;
+}
+.b2{
+	cursor: pointer;
+	border-radius: 5px;
+	padding: 5px 10px;
+	margin-left: 65%
+}
+.b1:hover{
+  background-color: gray;
+}
+.b2:hover{
+  background-color: gray;
+}

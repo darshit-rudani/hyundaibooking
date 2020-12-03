@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+            body{
+                background-color: whitesmoke;
+            }
+            input[type=text], input[type=password] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid black;
+                box-sizing: border-box;
+                max-width: 100%;
+                border-radius: 10px;
+            }
+            .buttons {
+                background-color:cadetblue;
+                color: black;
+                margin: 8px 0;
+                border: black;
+                cursor: pointer;
+                width: 50%;
+                border-radius: 15px;
+            }
+            .imglogin{
+                border-radius: 50px;
+                height: 100%;
+            }
+            table{
+                margin-left: 10%;
+            }
+            button{
+                margin-left: 3%;
+                border-radius: 8px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="row">
+            <div class="column">
+              <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="leftMenu"><br>
+                <button onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large">CLOSE</button>
+                <a href="index.html" class="w3-bar-item w3-button"><b>Home</b></a>
+                <a href="find car.html" target="_blank" class="w3-bar-item w3-button"><b>Find a Car</b></a>
+                <a href="login.html" target="_blank" class="w3-bar-item w3-button"><b>Login</b></a>
+                <a href="signup.html" target="_blank" class="w3-bar-item w3-button"><b>Sign Up</b></a>
+              </div>
+              <div><br>
+                  <button class="w3-button w3-teal w3-xlarge w3-left" onclick="openLeftMenu()">&#9776;</button>
+              </div>
+            </div>
+            
+            <div class="column"></div>
+            
+            <div class="column">
+              <img src="creta/logo2.png" alt="" class="logo" width="100%">
+            </div>
+        </div>
+
+            <script>
+                function openLeftMenu() {
+                  document.getElementById("leftMenu").style.display = "block";
+                }
+                
+                function closeLeftMenu() {
+                  document.getElementById("leftMenu").style.display = "none";
+                }
+            </script>  
+            <br><br>
+        <div class="row">
+            <div class="column">
+                <tr>
+                    <td>
+                        <img src="creta/login3.jpg" alt="" width="100%" class="imglogin">
+                    </td>
+                </tr>
+            </div>
+            <div class="column">
+                <table class="table1">
+                    <tr>
+                        <td>
+                            <h3><b>Enter Your Name : </b></h3>
+                            <input type="text" placeholder="Enter Your Name " required>
+                            <h3><b>Enter Your E-Mail : </b></h3>
+                            <input type="password" placeholder="Enter Your E-mail " required>
+                            <h3><b>Enter Your Password : </b></h3>
+                            <input type="text" placeholder="Enter Your Password " required>
+                            <h3><b>Enter Your Confirm Password : </b></h3>
+                            <input type="text" placeholder="Enter Your Confirm Password " required>
+                            <button type="submit" class="buttons"><a href="find car.html"><h2>Submit</h2></a></button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div><br>
+        <img src="creta/login2.jpg" alt="" width="100%"><br><br>
+    </body>
+</html>

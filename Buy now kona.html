@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration For Kona</title>
+        <link rel="stylesheet" href="table.css">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+        <style>
+            table{
+                margin-top: 1%;
+            }
+            button{
+                margin-left: 3%;
+                border-radius: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="row">
+            <div class="column">
+              <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="leftMenu"><br>
+                <button onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large">CLOSE</button>
+                <a href="index.html" class="w3-bar-item w3-button"><b>Home</b></a>
+                <a href="login.html" target="_blank" class="w3-bar-item w3-button"><b>Find a Car</b></a>
+                <a href="service.html" target="_blank" class="w3-bar-item w3-button"><b>Connect to Service</b></a>
+                <a href="about.html" target="_blank" class="w3-bar-item w3-button"><b>About</b></a>
+              </div>
+              <div><br>
+                  <button class="w3-button w3-teal w3-xlarge w3-left" onclick="openLeftMenu()">&#9776;</button>
+              </div>
+            </div>
+            
+            <div class="column"></div>
+            
+            <div class="column">
+              <img src="creta/logo2.png" alt="" class="logo" width="100%">
+            </div>
+        </div>
+
+        <script>
+        function openLeftMenu() {
+            document.getElementById("leftMenu").style.display = "block";
+        }
+        
+        function closeLeftMenu() {
+            document.getElementById("leftMenu").style.display = "none";
+        }
+        </script>  
+
+        <img src="creta/hyundaicar.jpg" class="hp"><br><br>
+      
+        <div class="row">
+            <div class="column">
+                <img src="Kona/buykona.jpg" alt="" width="100%">
+            </div>
+            <div class="column">
+                <table border="4px" align="center">
+                    <tr>
+                        <td colspan="2" align="center">
+                            <h1><b>Booking Kona </b></h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Enter Your Name :</td>
+                        <td>
+                            <input type="text"  class="input" placeholder="Name" style="background-color:lightgrey" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Enter Your E-mail Address : </td>
+                        <td>
+                            <input type="email" class="input" name="email"  placeholder="abcd@gmail.com" style="background-color:lightgrey" required>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td>Enter Mobile No :</td>
+                            <td><input type="number" class="input" placeholder="1234567890" style="background-color:lightgrey" required></td>
+                        </tr>
+                    <tr>
+                        <td>City :</td>
+                        <td>
+                            <select name="City" style="background-color:lightgrey" required>
+                                <option value="-">Select City</option>
+                                <option value="Surat"> Surat </option>
+                                <option value="Bharuch"> Bharuch </option>
+                                <option value="Junagadh">Junagadh</option>
+                                <option value="ahmedabad">ahmedabad</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Enter Address :</td>
+                        <td>
+                            <textarea name="Address" id="Address" cols="35" rows="5" placeholder="Home Address" style="background-color:lightgray" required></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Aadhaar Card No : </td>
+                        <td>
+                            <input type="number" class="input" placeholder="&#x2716;&#x2716;&#x2716;&#x2716; &#8722; &#x2716;&#x2716;&#x2716;&#x2716; &#8722; &#x2716;&#x2716;&#x2716;&#x2716;" style="background-color:lightgrey" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Driving License No : </td>
+                        <td>
+                            <input type="number" class="input" placeholder="GJ00 12345678901 " style="background-color:lightgrey" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Enter User Name :</td>
+                        <td><input type="text" class="input" placeholder="User name" style="background-color:lightgrey" required></td>
+                    </tr>
+                    <tr>
+                        <td>Select Car Model:</td>
+                        <td>
+                            <select name="model" style="background-color:lightgrey" required>
+                                <option value="-">Select Car Model</option>
+                                <option value="Kona Electric Premium :- ₹23,75,900">Kona Electric Premium :- ₹23,75,900</option>
+                                <option value="Kona Electric Premium Dual Tone :- ₹23,94,649">Kona Electric Premium Dual Tone :- ₹23,94,649</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Select Car Color : </td>
+                        <td>
+                            <select name="color" style="background-color:lightgrey" required>
+                                <option value="-">Select Car Color</option>
+                                <option value="Black"> Black </option>
+                                <option value="White"> White </option>
+                                <option value="Blue"> Blue </option>
+                                <option value="Orange"> Orange </option>
+                                <option value="Gray"> Gray </option>
+                                <option value="Red"> Yellow </option>
+                                <option value="Red"> Red </option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Select Booking Amount : </td>
+                        <td>
+                            <select name="amount" style="background-color:lightgrey" required>
+                                <option value="-">Select Booking Amount</option>
+                                <option value="₹25,000"> ₹25,000 </option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Select Payment Option : </td>
+                        <td>
+                            <select name="payment" style="background-color:lightgrey" required>
+                                <option value="-">Select Payment Option</option>
+                                <option value="Debit Cards"> Debit Cards </option>
+                                <option value="Credit Cards"> Credit Cards </option>
+                                <option value="Google Pay"> Google Pay </option>
+                                <option value="ahmedabad"> Phone Pay </option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Enter Card No 'or' Mobile No : </td>
+                        <td><input type="number" class="input" placeholder="No" style="background-color:lightgrey" required></td>
+                    </tr>
+                    <tr>
+                        <td>Enter Card Pin 'or' UPI Pin : </td>
+                        <td><input type="password" class="input" placeholder="Pin" style="background-color:lightgrey" required="required"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <h3><b> <input type="checkbox" class="box" required="required"> i have read and fully agree with <a href="term.html" style="color: red;"> Hyundai.com</a></b></h3>
+                            <button type="submit" class="buybutton1" onclick="myFunction()"> <a href="index.html" target="_blank"><b> Book Now </b></a></button>
+                        </td>
+                    </tr>
+                </table>
+                <script>
+                    function myFunction(){
+                        alert('Your Booking And Transaction Successfully Completed');
+                    }
+                </script>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background: #f2f2f2;
+}
+nav{
+	margin-left: 1.3%;
+	margin-right: 1.3%;
+	border-radius: 10px;
+  background: whitesmoke;
+}
+nav:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+nav .logo{
+  float: right;
+  margin-right: 3%;
+  color: black;
+  font-size: 200%;
+  font-weight: 800;
+  line-height: 70px;
+}
+nav ul{
+  float: left;
+  margin-right: 40px;
+  list-style: none;
+  position: relative;
+}
+nav ul li{
+  float: left;
+  display: inline-block;
+  background: whitesmoke;
+  color: black;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: black;
+  line-height: 70px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 15px;
+}
+nav ul li a:hover{
+  color: blue;
+  border-radius: 5px;
+  box-shadow:  0 0 5px blue,
+               0 0 10px blue;
+}
+nav ul ul li a:hover{
+  box-shadow: none;
+}
+nav ul ul{
+  position: absolute;
+  top: 90px;
+  border-top: 3px solid whitesmoke;
+  opacity: 0;
+  visibility: hidden;
+  transition: top .3s;
+}
+nav ul ul ul{
+	width: 100%;
+  border-top: none;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+nav ul ul li{
+  position: relative;
+  margin: 0px;
+  width: 110%;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul li{
+  position: relative;
+  margin: 0px;
+  width: 150%;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  top: -70px;
+  left: 280px;
+}
+nav ul ul ul ul li{
+  position: relative;
+  margin: 0px;
+  width: 140%;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  top: -70px;
+  left: 300px;
+}
+.show,.icon,input{
+  display: none;
+}
+.show1,.icon,input{
+  display: none;
+}.show2,.icon,input{
+  display: none;
+}.show3,.icon,input{
+  display: none;
+}
+.fa-plus{
+  font-size: 15px;
+  margin-left: 40px;
+}
+@media all and (max-width: 968px) {
+  nav ul{
+    margin-right: 0px;
+    float: left;
+  }
+  nav .logo{
+    padding-left: 30px;
+    width: 100%;
+  }
+  .show + a, ul{
+    display: none;
+  }
+  .show1 + a, ul, ul{
+    display: none;
+  }.show2 + a, ul, ul, ul{
+    display: none;
+  }.show3 + a, ul, ul, ul, ul{
+    display: none;
+  }
+  
+  nav ul li,nav ul ul li{
+    display: block;
+    width: 100%;
+  }
+  nav ul li a:hover{
+    box-shadow: none;
+  }
+  .show{
+    display: block;
+    color: black;
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+  }
+  .show1{
+    display: block;
+    color: black;
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+  }.show2{
+    display: block;
+    color: black;
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+  }.show3{
+    display: block;
+    color: black;
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+  }
+  .show:hover{
+    color: cyan;
+  }
+  .show1:hover{
+    color: cyan;
+  }.show2:hover{
+    color: cyan;
+  }.show3:hover{
+    color: cyan;
+  }
+  .icon{
+    display: block;
+    color: black;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  nav ul ul{
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  nav ul ul a{
+    padding-left: 40px;
+  }
+  nav ul ul ul a{
+    padding-left: 80px;
+  }
+  nav ul ul ul li{
+    position: static;
+  }
+  [id^=btn]:checked + ul{
+    display: block;
+  }
+  nav ul ul li{
+    border-bottom: 0px;
+  }
+  span.cancel:before{
+    content: '\f00d';
+  }
+}
+.content{
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
